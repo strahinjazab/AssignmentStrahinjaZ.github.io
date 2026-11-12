@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+/* END GLOBAL STYLES */
+
+
+/* HEADER STYLES */
+nav{
+    display: flex;
+    background-color: #1b1c1d;
+    height: 80px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-grow:1;
+}
+
+nav ul li{
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 40px;
+    display: inline-block;
+    width: 100%;
+    line-height: 80px;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: #c5aa84;
+    color:#272828;
+}
+
+#logo{
+    height: 100%;
+    padding:10px;
+}
+
+#logo img{
+    height: 100%;
+}
+/* END HEADER STYLES */
+
+
+/* MAIN STYLES */
+main section{
+    display: flex;
+    width:100%;
+    max-height:500px;
+    overflow:hidden;
+}
+
+main section div{
+    flex:1;
+}
+
+section:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+
+.img img{
+    width:100%;
+}
+
+main section p, 
+main section h2{
+    padding: 20px 50px 0px;
+}
+
+.mainDiv{
+    display: flex;
+}
+
+.mainDiv main{
+    flex: 5;
+}
+
+.mainDiv aside{
+    flex: 1;
+    background-color: #c5aa84;
+    text-align: center;
+    padding: 20px 50px;
+}
+.mainDiv aside ul{
+    list-style: none;
+}
+.mainDiv aside ul li{
+    margin-top: 10px;
+}
+.mainDiv aside ul li h2{
+    color: purple;
+}
