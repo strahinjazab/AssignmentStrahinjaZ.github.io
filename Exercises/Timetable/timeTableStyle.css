@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+}
+th {
+    background-color: lightgray;
+    font-weight: bold;
+}
+td {
+    height: 10px;
+}
+td:first-child {
+    width: 90px;
+    background-color: #e6e6e6;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.lesson {
+    background-color: #eeeeee;
+    vertical-align: middle;
+    padding: 10px;
+}
+.lesson h4 {
+    margin: 5px 0;
+    font-size: 13px;
+}
+.lesson b {
+    display: block;
+    font-size: 13px;
+}
+.lesson p {
+    font-size: 11px;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
