@@ -10,8 +10,6 @@ body{
     The div selector styles all div elements.
     We removed styling from the div selector and added it to the .bigBox and .smallBox selectors.
 */
-div {
-}
 
 /*
     This class is used for the outer box in the example
@@ -20,6 +18,7 @@ div {
     display: flex;
     height:50vh;
     justify-content: space-around;
+    gap: 20px;
 }
 
 /*
@@ -47,4 +46,18 @@ div {
 */
 .bigBox .blue{
     background-color: #4949c5;
+}
+
+.thirdBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    background-color: purple;
+}
+
+.innerBox {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
 }
