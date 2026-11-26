@@ -2,12 +2,20 @@ body{
     background-color: #343434;
 }
 
+/* this is so that the form stays centred*/
+form{
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
 fieldset{
     color:#faebd7;
     background-color: #343434;
     border: 1px solid #b78032;
     border-radius: 20px;
     margin-bottom:25px;
+    padding: 20px; /*padding added*/
 }
 
 legend{
@@ -15,9 +23,67 @@ legend{
     background-color: #626262;
     border: 1px solid #b78032;
     border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top:5px;
-    padding-bottom:5px;
+    padding: 5px 20px;
+}
 
+form div{
+    margin-bottom: 15px;
+}
+
+/*styling regarding the text inputs*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: #454545;
+    color: #faebd7;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* the border outline of any input turns orange */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 1px solid #b78032;
+    border-color: #b78032;
+}
+
+/*multiple choice buttons styling*/
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #b78032;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* styling for buttons */
+button {
+    background-color: #b78032;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* reset button*/
+button[type="reset"]{
+    background-color: #626262;
+}
+
+button:hover {
+    background-color: #946524;
 }
